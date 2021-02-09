@@ -6,11 +6,11 @@ public class RF10 {
 		
 		Simple h = new Simple();
 		
-		Method m = h.getClass().getDeclaredMethod("setA", double.class);
+		Method m = h.getClass().getDeclaredMethod("setA", float.class);
 		
 		m.setAccessible(true);
 		
-		m.invoke(h, 76);
+		m.invoke(h, 25);
 		
 		System.out.println(h);
 	}
